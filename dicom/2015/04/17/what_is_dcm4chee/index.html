@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>什么是dcm4chee</title>
+    
+	
+	<meta name="author" content="李林">
+	
+	<link rel="stylesheet" href="/assets/themes/Snail/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/main.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/pages/journal.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/team.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/static.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/css/errors.css">
+	<link rel="stylesheet" href="/assets/themes/Snail/google-code-prettify/prettify.css">
+	
+	<link rel="shortcut icon" href="/assets/themes/Snail/img/favicon.ico">
+	
+	<script type="text/javascript" src="/assets/themes/Snail/js/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="/assets/themes/Snail/js/auto_loadmore.js"></script>
+	
+	<script type="text/javascript" src="/assets/themes/Snail/google-code-prettify/prettify.js"></script>
+	
+	<script type="text/javascript">
+	  $(function(){
+		$("pre code").addClass("prettyprint linenums");
+		prettyPrint();
+	  });
+	</script>
+	
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+</head>
+<body>
+	<noscript>
+		&amp;lt;div id="no-js"&amp;gt;Please enable JavaScript in your browser to experience / fully&amp;lt;/div&amp;gt;
+	</noscript>
+    <div id="page-container">
+		<div>
+			<nav>
+	<div id="nav-l">
+	</div>
+	<div id="nav-c">
+		<ul id="nav-list" style="width: 700px;">
+			<li id="home"><a href="/">Home</a></li>
+			
+			
+			
+				
+				  
+				
+			 
+				
+				  
+					
+					<li id = "About Me"><a href="/about.html">About Me</a></li>
+					
+				  
+				
+			 
+				
+				  
+					
+					<li id = "Archive"><a href="/archive.html">Archive</a></li>
+					
+				  
+				
+			 
+				
+				  
+				
+			 
+				
+				  
+					
+					<li id = "Categories"><a href="/categories.html">Categories</a></li>
+					
+				  
+				
+			 
+				
+			 
+				
+				  
+				
+			 
+				
+				  
+				
+			 
+				
+				  
+				
+			 
+				
+				  
+					
+					<li id = "Tags"><a href="/tags.html">Tags</a></li>
+					
+				  
+				
+			 
+			
+			
+		</ul>
+		<form id="nav-search" method="GET" action="/search.html">
+			<div id="search-right-pix">
+				<div id="search-left-pix">
+					<div id="search-center-pix">
+						<div id="search-icon-pix"></div>
+						<input name="query" type="text" placeholder="Search">
+					</div>
+				</div>
+			</div>
+		</form>
+		
+		
+	</div>
+	<div id="nav-r">
+	</div>
+</nav>
+			<div id="page-content">
+				
+<div id="page-content">
+	<div class="cont932">
+	<div id="journal-articles-block">
+		<div class="journal-article">
+			<div class="journal-post-info">
+				<div class="journal-cat-box">
+				
+				
+				<div class="journal-cat-box">
+
+<a href="/categories.html#dicom-ref" title="dicom">
+	dicom
+
+</a>
+</div>
+				
+				</div>
+			</div>
+			<div class="journal-body">
+				<h1 class="journal-title">什么是dcm4chee<span class="author">by 李林</span>
+				</h1>
+				<span class="the-article">
+				<p>医疗影像领域最有名的dicom服务系统，学习笔记</p>
+
+<!--more-->
+<p>dcm4chee 是怎么一回事？</p>
+
+<p>今后公司的产品是提供在线医疗影像的咨询服务。需要深入的了解医疗影像DICOM协议以及基于DICOM协议之上的PACS系统和图像处理技术。</p>
+
+<p>从当前我们的眼界范围内，能够看到的业界相对认可的开源dicom系统是DCM4CHEE.</p>
+
+<p>因此，近期我的学习重点需要聚焦DCM4CHEE系统。</p>
+
+<h1 id="dcm4chee">1 DCM4CHEE是什么？</h1>
+
+<p>DCM4CHEE是一套开源的使用以java语言为主开发的兼容HL7和DICOMM等国际医疗信息化标准协议的完整服务框架实现。</p>
+
+<p>上面说法比较拗口，简单来说DCM4CHEE是一套医院可以用来作为pacs服务器的开源软件系统，就是功能全，比较得到大家认可而已。</p>
+
+<p>由于是java系统，该系统可以部署在包括windows，linux，osx和主流unix操作系统上。</p>
+
+<p>它需要数据的支持才能跑起来。可以使用的后台数据库包括postgreSQL,mysql，oracle，sqlserver等。</p>
+
+<p>系统结构参考下图：
+<img src="http://www.dcm4che.org/confluence/download/attachments/1179664/dcm4chee.jpg?version=3&amp;modificationDate=1181883791590" alt="系统结构图" /></p>
+
+<p>通过这段时间的学习，无论是dicom协议还是dcm4chee系统，有一个感觉不知道对不对。感觉协议的制定者们希望这套协议通吃天下，面面俱到，从软件系统架构上来说“偏重”。例如media creation manager 模块，是用来方便刻录光盘的，在协议的制定时代，刻录光盘可能是解决大数据量存储交换的一个重要因素，可是在互联网时代，当网络带宽和系统存储能力的增长，光盘介质已经“风光不再”，所以这个模块的很多能力，在未来不长的时间里面可能会逐步弱化甚至消亡。</p>
+
+<p>但是没有办法，如果想快速的具备pacs系统功能，对于一个行业外的人来说，dcm4chee是了解和学习这方面技术的不多的选择。</p>
+
+<h1 id="section">2 系统安装</h1>
+
+<p>使用了mac OS操作系统，尝试着一遍一边介绍：</p>
+
+<p>a 安装环境准备</p>
+
+<p>需要JDK5.0以上，512M内存，200M硬盘存储，400MHZ CPU。通过这些环境就明白了，DCM4CHEE的确是出现比较早期的产品了。</p>
+
+<p>数据库我准备用mysql。</p>
+
+<p>图象压缩的注意事项：</p>
+
+<ul>
+  <li>如果你是windows或者linux i586操作系统，恭喜，现有的dcm4chee版本可以满足要求了。</li>
+  <li>如果是linux-amd64 或者 solaris，需要额外下一个lib库。</li>
+  <li>如果是mac OS 或者是 64bit 的windows，就需要修改一个配置文件。这个会在step 8 章节说明。</li>
+</ul>
+
+<p>说了半天，系统的维护者们推荐dcm4chee系统安装在linux，solaris 和 windwos操作系统上。有个图片的组件需要java和本身应用之间的配合协作才能完成，自身应用在其他操作系统上不支持。</p>
+
+<p>b 安装步骤</p>
+
+<p>根据说明一步步的安装即可。windows平台有一个pacs.exe文件，运行后相关服务和应用一并启动。</p>
+
+<p>其他平台要一步步的走。这里就先不深入理解了。</p>
+
+<h1 id="section-1">3 数据模型</h1>
+
+<p>如下图所示：</p>
+
+<p><img src="http://www.dcm4che.org/confluence/download/attachments/496/2.18.x%20Database%20Scheme.jpg" alt="" /></p>
+
+<h1 id="section-2">4 功能模块描述</h1>
+
+<h2 id="web-based-ui">web-based ui</h2>
+
+<p>基于浏览器web页面的前台管理界面</p>
+
+<h2 id="dicom-storage">dicom storage</h2>
+
+<p>提供任何dicom格式文件的存储功能，存储到一般的文件系统上。如果需要可以做压缩。</p>
+
+<h2 id="dicom-queryretrieve">dicom query/retrieve</h2>
+
+<p>查询和获取dicom对象</p>
+
+<h2 id="wado-and-rid">wado and rid</h2>
+
+<p>归档内容的web访问能力</p>
+
+<h2 id="other-dicom-services">other dicom services</h2>
+
+<p>其他dicom服务能力（基于dicom协议标准）</p>
+
+<h2 id="hl7-server">HL7 server</h2>
+
+<p>内部集成的一个HL7协议服务器，兼容主流的信息交互规范</p>
+
+<h2 id="ihe-service">IHE service</h2>
+
+<p>兼容IHE服务</p>
+
+<h1 id="section-3">总结</h1>
+
+<p>通过以上内容的学习和思考，我们基本了解了dcm4chee是什么了。</p>
+
+<p>下面我们将回到dicom协议来学习这个协议的情况</p>
+
+
+				</span>
+				<div class="journal-date">Published 17 April 2015</div>
+				<div class="journal-tags">
+				
+				
+	 
+		<a class="tag-cont" href="/tags.html#dicom，pacs-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">dicom，pacs</div>
+			<div class="tag-r"></div>
+		</a>
+	
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+</div>
+	<div class="clearboth"></div>
+	
+
+
+  <!-- 多说评论框 start -->
+<div id="comments">
+    <div class="ds-thread" data-thread-key="/dicom/2015/04/17/what_is_dcm4chee"  data-title="什么是dcm4chee - 野猪一九九五"></div>
+</div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"wildpig95"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+	<div class="clearboth"></div>
+</div>
+
+			</div>
+			<div class="clearboth pagebottom"></div>
+		</div>
+	</div>
+	<footer>
+	<div class="footer-940">
+		<div class="footer-general-info">
+			© 2014 李林.<br><br>
+			Content licensed under:<br>
+			<a class="cc" href="http://creativecommons.org/licenses/by-sa/3.0/">c a b</a><br>
+			<a href = "/about.html">About Me</a><br>
+		</div>
+		<div class="footer-col-cont">
+			<div class="footer-nav-col">
+				<h4><a>Categories</a></h4>
+				<ul>
+					
+					
+
+
+  
+     
+    	<li><a href="/categories.html#book-ref">
+    		book <span>2</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#dicom-ref">
+    		dicom <span>1</span>
+    	</a></li>
+    
+  
+
+
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Pages</a></h4>
+				<ul>
+					
+					
+					
+
+
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/about.html">About Me</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Feed</a></h4>
+				<ul>
+					<li><a href="/atom.xml">Atom Feed</a></li>
+					<li><a href="/rss.xml">RSS Feed</a></li>
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a>Links</a></h4>
+				<ul>
+				 
+					<li><a href = "http://wildpig95.github.io/">wildpig95's Blog</a></li>
+				
+				</ul>
+			</div>
+			<div class="footer-nav-col">
+				<h4><a href = "/about.html">About Me</a></h4>
+				<ul>
+				 
+					<li><a href = "mailto:wildpig95@gmail.com">e-mail</a></li>
+				 
+					<li><a href = "https://github.com/wildpig95">Github</a></li>
+				 
+					<li><a href = "http://www.weibo.com/wildpig95">WeiBo</a></li>
+				
+				</ul>
+			</div>
+			<div class="clearboth"></div>
+		</div>
+		<div class="clearboth"></div>
+	</div>
+	<div class="clearboth"></div>
+</footer>
+	
+</body>
+</html>
+
