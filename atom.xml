@@ -4,13 +4,76 @@
  <title>野猪一九九五</title>
  <link href="http://wildpig95.github.io/" rel="self"/>
  <link href="http://wildpig95.github.io"/>
- <updated>2015-04-17T16:30:57+08:00</updated>
+ <updated>2015-12-13T20:35:50+08:00</updated>
  <id>http://wildpig95.github.io</id>
  <author>
    <name>李林</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>学习做产品（一）</title>
+   <link href="http://wildpig95.github.io/think/2015/12/12/%E5%AD%A6%E4%B9%A0_pd"/>
+   <updated>2015-12-12T00:00:00+08:00</updated>
+   <id>http://wildpig95.github.io/think/2015/12/12/学习_pd</id>
+   <content type="html">&lt;p&gt;与时俱进的学习产品应该怎么设计。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;为什么？&lt;/h1&gt;
+
+&lt;p&gt;我们需要更符合现在业务发展趋势的软件开展方法。敏捷软件开发的价值观与互联网产品的发展已经成为码农界的主流。在具体的软件开发过程中，作为产品经理应当明确自己的职责和目标，带领团队做出更出色的软件。&lt;/p&gt;
+
+&lt;p&gt;需求了解和输出的过程是艰难的，很少有人真正把握客户，或者用户真正想要的。在互联网时代，产品经理会更多的从人性出发去解决问题（例如，张小龙对微信设计的解读）。&lt;/p&gt;
+
+&lt;p&gt;用一堆大而全的需求模板去考虑需求的面面俱到，往往浪费大于收益。&lt;/p&gt;
+
+&lt;p&gt;越来越多的人开始在日常工作中出发，分享和引导软件开发从传统走向互联网，产品经理的工作方法也随之更新，应当赶上趋势。&lt;/p&gt;
+
+&lt;h1 id=&quot;section-1&quot;&gt;怎么做？&lt;/h1&gt;
+
+&lt;p&gt;知乎上提到一个比较有名的产品经理教学老师–尹广磊，提出了web页面的设计过程。可以作为参考内容：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.webppd.com/attachments/month_1103/1103081611a3ca5db1fd5646ae.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;section-2&quot;&gt;用工具吗？&lt;/h1&gt;
+
+&lt;p&gt;工具是可以提高工作效率的，最好的工具应该是在知识体系构建下的合理的方法论，配合高效的工具。&lt;/p&gt;
+
+&lt;p&gt;AXURE还是Sketch，有人已经做了很好的分享。参考如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;著作权归作者所有。
+商业转载请联系作者获得授权，非商业转载请注明出处。
+作者：盗盗
+链接：http://www.zhihu.com/question/26712715/answer/34060864
+来源：知乎&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;作为一个同时掌握产品+交互+开发的人，我后来在项目中即时调整了我的工作流程，看我的Dock，我是如此安排在Code之前我的开发节奏的：Axure &amp;gt; Sketch &amp;gt; (QC) &amp;gt; … 对比之后，发现效率极大的提升，在设计成本一定的情况下，产品策划（Axure） 和 UI设计（Sketch）的时间成本可以保持在3:1的样子；而之前用Sketch的时候，我估计是5:1的样子，甚至更多….&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_b.jpg&quot; data-rawwidth=&quot;824&quot; data-rawheight=&quot;160&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;824&quot; data-original=&quot;https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_r.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我是这么理解我吃饭的家伙们的：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Axure：梳理完成全部产品信息架构和功能。所以Auxre之于我的重要性他不是画图软件、不是交互软件，而更多的是帮助我从无到有梳理整个产品大的脉络&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Sketch：基于之前的线框图增强设计感，具象之前的产品；如果产品理顺了的话，设计UI在Sketch的帮助下产出简直是飞速的，这也是Sketch之于Photoshop之流在做UI设计时候的牛逼之处。但是如果你错误的将Sketch定义为规划产品的工具，那产能会十分的低下&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;QC：仅针对一些极为复杂和细腻的交互动画（千万别试图拿QC当产品的交互工具，搞死你…），配合使用即可，也是帮助自己梳理特效的交互逻辑，避免在真实开发环境中走太多弯路。学习成本略高的软件，我今年上半年花了大力气学习的东西，传送门：Quartz Composer 如何入门？（目前QC我已经摒弃了，推荐Principle这款交互特效软件，更高效》》如何评价principle这款交互软件？）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Coding…（业余选手，主要是前端）&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>什么是dcm4chee</title>

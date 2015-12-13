@@ -10,6 +10,7 @@ http://wildpig95.github.io/search.html
 http://wildpig95.github.io/sitemap.txt
 http://wildpig95.github.io/tags.html
 
+http://wildpig95.github.io/think/2015/12/12/%E5%AD%A6%E4%B9%A0_pd
 http://wildpig95.github.io/dicom/2015/04/17/what_is_dcm4chee
 http://wildpig95.github.io/book/2015/04/01/progit-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0
 http://wildpig95.github.io/book/2015/03/23/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0_%E7%94%B5%E5%AD%90%E5%8F%A3%E5%B2%B8%E5%AE%9E%E7%94%A8%E5%8A%9F%E8%83%BD

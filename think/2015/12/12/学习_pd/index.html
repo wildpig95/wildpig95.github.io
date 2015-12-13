@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>什么是dcm4chee</title>
+	<title>学习做产品（一）</title>
     
 	
 	<meta name="author" content="李林">
@@ -140,8 +140,8 @@
 				
 				<div class="journal-cat-box">
 
-<a href="/categories.html#dicom-ref" title="dicom">
-	dicom
+<a href="/categories.html#think-ref" title="think">
+	think
 
 </a>
 </div>
@@ -149,115 +149,80 @@
 				</div>
 			</div>
 			<div class="journal-body">
-				<h1 class="journal-title">什么是dcm4chee<span class="author">by 李林</span>
+				<h1 class="journal-title">学习做产品（一）<span class="author">by 野猪一九九五</span>
 				</h1>
 				<span class="the-article">
-				<p>医疗影像领域最有名的dicom服务系统，学习笔记</p>
+				<p>与时俱进的学习产品应该怎么设计。</p>
 
 <!--more-->
-<p>dcm4chee 是怎么一回事？</p>
 
-<p>今后公司的产品是提供在线医疗影像的咨询服务。需要深入的了解医疗影像DICOM协议以及基于DICOM协议之上的PACS系统和图像处理技术。</p>
+<h1 id="section">为什么？</h1>
 
-<p>从当前我们的眼界范围内，能够看到的业界相对认可的开源dicom系统是DCM4CHEE.</p>
+<p>我们需要更符合现在业务发展趋势的软件开展方法。敏捷软件开发的价值观与互联网产品的发展已经成为码农界的主流。在具体的软件开发过程中，作为产品经理应当明确自己的职责和目标，带领团队做出更出色的软件。</p>
 
-<p>因此，近期我的学习重点需要聚焦DCM4CHEE系统。</p>
+<p>需求了解和输出的过程是艰难的，很少有人真正把握客户，或者用户真正想要的。在互联网时代，产品经理会更多的从人性出发去解决问题（例如，张小龙对微信设计的解读）。</p>
 
-<h1 id="dcm4chee">1 DCM4CHEE是什么？</h1>
+<p>用一堆大而全的需求模板去考虑需求的面面俱到，往往浪费大于收益。</p>
 
-<p>DCM4CHEE是一套开源的使用以java语言为主开发的兼容HL7和DICOMM等国际医疗信息化标准协议的完整服务框架实现。</p>
+<p>越来越多的人开始在日常工作中出发，分享和引导软件开发从传统走向互联网，产品经理的工作方法也随之更新，应当赶上趋势。</p>
 
-<p>上面说法比较拗口，简单来说DCM4CHEE是一套医院可以用来作为pacs服务器的开源软件系统，就是功能全，比较得到大家认可而已。</p>
+<h1 id="section-1">怎么做？</h1>
 
-<p>由于是java系统，该系统可以部署在包括windows，linux，osx和主流unix操作系统上。</p>
+<p>知乎上提到一个比较有名的产品经理教学老师–尹广磊，提出了web页面的设计过程。可以作为参考内容：</p>
 
-<p>它需要数据的支持才能跑起来。可以使用的后台数据库包括postgreSQL,mysql，oracle，sqlserver等。</p>
+<p><img src="http://www.webppd.com/attachments/month_1103/1103081611a3ca5db1fd5646ae.jpg" alt="" /></p>
 
-<p>系统结构参考下图：
-<img src="http://www.dcm4che.org/confluence/download/attachments/1179664/dcm4chee.jpg?version=3&amp;modificationDate=1181883791590" alt="系统结构图" /></p>
+<h1 id="section-2">用工具吗？</h1>
 
-<p>通过这段时间的学习，无论是dicom协议还是dcm4chee系统，有一个感觉不知道对不对。感觉协议的制定者们希望这套协议通吃天下，面面俱到，从软件系统架构上来说“偏重”。例如media creation manager 模块，是用来方便刻录光盘的，在协议的制定时代，刻录光盘可能是解决大数据量存储交换的一个重要因素，可是在互联网时代，当网络带宽和系统存储能力的增长，光盘介质已经“风光不再”，所以这个模块的很多能力，在未来不长的时间里面可能会逐步弱化甚至消亡。</p>
+<p>工具是可以提高工作效率的，最好的工具应该是在知识体系构建下的合理的方法论，配合高效的工具。</p>
 
-<p>但是没有办法，如果想快速的具备pacs系统功能，对于一个行业外的人来说，dcm4chee是了解和学习这方面技术的不多的选择。</p>
+<p>AXURE还是Sketch，有人已经做了很好的分享。参考如下：</p>
 
-<h1 id="section">2 系统安装</h1>
+<blockquote>
+  <p>著作权归作者所有。
+商业转载请联系作者获得授权，非商业转载请注明出处。
+作者：盗盗
+链接：http://www.zhihu.com/question/26712715/answer/34060864
+来源：知乎</p>
+</blockquote>
 
-<p>使用了mac OS操作系统，尝试着一遍一边介绍：</p>
+<p>作为一个同时掌握产品+交互+开发的人，我后来在项目中即时调整了我的工作流程，看我的Dock，我是如此安排在Code之前我的开发节奏的：Axure &gt; Sketch &gt; (QC) &gt; … 对比之后，发现效率极大的提升，在设计成本一定的情况下，产品策划（Axure） 和 UI设计（Sketch）的时间成本可以保持在3:1的样子；而之前用Sketch的时候，我估计是5:1的样子，甚至更多….</p>
 
-<p>a 安装环境准备</p>
+<p><img src="https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_b.jpg" data-rawwidth="824" data-rawheight="160" class="origin_image zh-lightbox-thumb" width="824" data-original="https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_r.jpg" /></p>
 
-<p>需要JDK5.0以上，512M内存，200M硬盘存储，400MHZ CPU。通过这些环境就明白了，DCM4CHEE的确是出现比较早期的产品了。</p>
-
-<p>数据库我准备用mysql。</p>
-
-<p>图象压缩的注意事项：</p>
+<p>我是这么理解我吃饭的家伙们的：</p>
 
 <ul>
-  <li>如果你是windows或者linux i586操作系统，恭喜，现有的dcm4chee版本可以满足要求了。</li>
-  <li>如果是linux-amd64 或者 solaris，需要额外下一个lib库。</li>
-  <li>如果是mac OS 或者是 64bit 的windows，就需要修改一个配置文件。这个会在step 8 章节说明。</li>
+  <li>
+    <p>Axure：梳理完成全部产品信息架构和功能。所以Auxre之于我的重要性他不是画图软件、不是交互软件，而更多的是帮助我从无到有梳理整个产品大的脉络</p>
+  </li>
+  <li>
+    <p>Sketch：基于之前的线框图增强设计感，具象之前的产品；如果产品理顺了的话，设计UI在Sketch的帮助下产出简直是飞速的，这也是Sketch之于Photoshop之流在做UI设计时候的牛逼之处。但是如果你错误的将Sketch定义为规划产品的工具，那产能会十分的低下</p>
+  </li>
+  <li>
+    <p>QC：仅针对一些极为复杂和细腻的交互动画（千万别试图拿QC当产品的交互工具，搞死你…），配合使用即可，也是帮助自己梳理特效的交互逻辑，避免在真实开发环境中走太多弯路。学习成本略高的软件，我今年上半年花了大力气学习的东西，传送门：Quartz Composer 如何入门？（目前QC我已经摒弃了，推荐Principle这款交互特效软件，更高效》》如何评价principle这款交互软件？）</p>
+  </li>
+  <li>
+    <p>Coding…（业余选手，主要是前端）</p>
+  </li>
 </ul>
-
-<p>说了半天，系统的维护者们推荐dcm4chee系统安装在linux，solaris 和 windwos操作系统上。有个图片的组件需要java和本身应用之间的配合协作才能完成，自身应用在其他操作系统上不支持。</p>
-
-<p>b 安装步骤</p>
-
-<p>根据说明一步步的安装即可。windows平台有一个pacs.exe文件，运行后相关服务和应用一并启动。</p>
-
-<p>其他平台要一步步的走。这里就先不深入理解了。</p>
-
-<h1 id="section-1">3 数据模型</h1>
-
-<p>如下图所示：</p>
-
-<p><img src="http://www.dcm4che.org/confluence/download/attachments/496/2.18.x%20Database%20Scheme.jpg" alt="" /></p>
-
-<h1 id="section-2">4 功能模块描述</h1>
-
-<h2 id="web-based-ui">web-based ui</h2>
-
-<p>基于浏览器web页面的前台管理界面</p>
-
-<h2 id="dicom-storage">dicom storage</h2>
-
-<p>提供任何dicom格式文件的存储功能，存储到一般的文件系统上。如果需要可以做压缩。</p>
-
-<h2 id="dicom-queryretrieve">dicom query/retrieve</h2>
-
-<p>查询和获取dicom对象</p>
-
-<h2 id="wado-and-rid">wado and rid</h2>
-
-<p>归档内容的web访问能力</p>
-
-<h2 id="other-dicom-services">other dicom services</h2>
-
-<p>其他dicom服务能力（基于dicom协议标准）</p>
-
-<h2 id="hl7-server">HL7 server</h2>
-
-<p>内部集成的一个HL7协议服务器，兼容主流的信息交互规范</p>
-
-<h2 id="ihe-service">IHE service</h2>
-
-<p>兼容IHE服务</p>
-
-<h1 id="section-3">总结</h1>
-
-<p>通过以上内容的学习和思考，我们基本了解了dcm4chee是什么了。</p>
-
-<p>下面我们将回到dicom协议来学习这个协议的情况</p>
 
 
 				</span>
-				<div class="journal-date">Published 17 April 2015</div>
+				<div class="journal-date">Published 12 December 2015</div>
 				<div class="journal-tags">
 				
 				
 	 
-		<a class="tag-cont" href="/tags.html#dicom，pacs-ref">
+		<a class="tag-cont" href="/tags.html#think-ref">
 			<div class="tag-l"></div>
-			<div class="tag-c">dicom，pacs</div>
+			<div class="tag-c">think</div>
+			<div class="tag-r"></div>
+		</a>
+	 
+		<a class="tag-cont" href="/tags.html#产品设计-ref">
+			<div class="tag-l"></div>
+			<div class="tag-c">产品设计</div>
 			<div class="tag-r"></div>
 		</a>
 	
@@ -276,7 +241,7 @@
 
   <!-- 多说评论框 start -->
 <div id="comments">
-    <div class="ds-thread" data-thread-key="/dicom/2015/04/17/what_is_dcm4chee"  data-title="什么是dcm4chee - 野猪一九九五"></div>
+    <div class="ds-thread" data-thread-key="/think/2015/12/12/学习_pd"  data-title="学习做产品（一） - 野猪一九九五"></div>
 </div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
