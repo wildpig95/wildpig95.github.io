@@ -2,13 +2,81 @@
 <rss version="2.0">
 <channel>
         <title>野猪一九九五</title>
-        <description>野猪一九九五</description>
+        <description>野猪一九九五 - 李林</description>
         <link>http://wildpig95.github.io</link>
         <link>http://wildpig95.github.io</link>
-        <lastBuildDate>2015-12-13T20:35:50+08:00</lastBuildDate>
-        <pubDate>2015-12-13T20:35:50+08:00</pubDate>
+        <lastBuildDate>2015-12-18T16:11:26+08:00</lastBuildDate>
+        <pubDate>2015-12-18T16:11:26+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>企业web应用开发框架选型</title>
+                <description>&lt;p&gt;life is short, you need python!&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;为什么&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;小型技术公司的生存之道是如何在别人用1个月的时间开发一个应用的时候，在相同质量要求下，你用2个星期 — 开发效率。开发效率不仅仅是个体的行为，而需要团队整体的开发效率提升。作为码农，没有比怎么在最短时间内写出高质量代码更能提高整体效率的事情了。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我们现在用java语言和sprintMVC框架属于轻车熟路，我们能而其他团队也能甚至更快的开发企业web应用。单从这个角度来看，这不足以支撑我们活下去。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;因此，技术转型需要提到日程。我们已经从SVN磕磕绊绊走上GIT，还是那句话『人生苦短，我用XX』。至于XX是什么，下面讨论。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;目标&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;相同的企业web应用，用java和springMVC框架一个月，用了XX可以2个星期。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;选择过程&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;现在前端技术火热，javascrpt为带代表的各种框架都火了。在这个风潮下，我学习了一下nodejs，但发现nodejs在web异步处理上特别牛逼，但这个优势在企业web应用上应该不会有太大的作为。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;把研究领域聚焦在web应用开发上，发现解决这个问题最快的可能是ROR（ruby on rails）— ruby是开发语言，rails是基于ruby的开发框架。早在2007年，我在项目里面让一个兄弟试用过rails框架，CRUD（增删改查）分分钟搞定。八年后再来研究，它的所谓『劣势』有：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;ruby属于元编程，有极强的灵活性，负面效应是团队难以统一思路。&lt;/li&gt;
+  &lt;li&gt;ruby哲学强调，解决一个问题有很多种途径。会产生众多选择性问题，在没有ruby牛人之前，团队可能有1000个解决问题的办法，从而拖累项目进度。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;再强调一下，以上两点都不是劣势，而是不适合我们团队的情况。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;在web应用轻量级快速开发选项里面，还有python语言及其种类繁多的web应用开发框架，例如flask,py.web,py2web等等。相对与ruby，它适宜我们团队使用的优势可能有：&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;python哲学，解决一个问题只有一个最佳实践。节省大量扯皮和选择的时间。&lt;/li&gt;
+  &lt;li&gt;python社区非常活跃，其在各个领域的组件、库和框架已经远远远远远远超过ruby，甚至比java还多。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;结论&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;结合以上粗浅的研究，我个人觉得让python及其web应用开发框架作为团队整体技术体系『丰富』的第一步是一个理性的选择。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;life is short, you need python – 这是原话，来自Bruce Eckel（《thinking in java》 和 《thinkin in c++》的作者）&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+                <link>http://wildpig95.github.io/learn/2015/12/18/%E4%BC%81%E4%B8%9Aweb%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E9%80%89%E5%9E%8B</link>
+                <guid>http://wildpig95.github.io/learn/2015/12/18/企业web应用开发框架选型</guid>
+                <pubDate>2015-12-18T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>学习做产品（一）</title>

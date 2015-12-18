@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>学习做产品（一）</title>
+	<title>企业web应用开发框架选型</title>
     
 	
 	<meta name="author" content="李林">
@@ -140,8 +140,8 @@
 				
 				<div class="journal-cat-box">
 
-<a href="/categories.html#think-ref" title="think">
-	think
+<a href="/categories.html#learn-ref" title="learn">
+	learn
 
 </a>
 </div>
@@ -149,67 +149,72 @@
 				</div>
 			</div>
 			<div class="journal-body">
-				<h1 class="journal-title">学习做产品（一）<span class="author">by 野猪一九九五</span>
+				<h1 class="journal-title">企业web应用开发框架选型<span class="author">by 野猪一九九五</span>
 				</h1>
 				<span class="the-article">
-				<p>与时俱进的学习产品应该怎么设计。</p>
+				<p>life is short, you need python!</p>
 
 <!--more-->
 
-<h1 id="section">为什么？</h1>
-
-<p>我们需要更符合现在业务发展趋势的软件开展方法。敏捷软件开发的价值观与互联网产品的发展已经成为码农界的主流。在具体的软件开发过程中，作为产品经理应当明确自己的职责和目标，带领团队做出更出色的软件。</p>
-
-<p>需求了解和输出的过程是艰难的，很少有人真正把握客户，或者用户真正想要的。在互联网时代，产品经理会更多的从人性出发去解决问题（例如，张小龙对微信设计的解读）。</p>
-
-<p>用一堆大而全的需求模板去考虑需求的面面俱到，往往浪费大于收益。</p>
-
-<p>越来越多的人开始在日常工作中出发，分享和引导软件开发从传统走向互联网，产品经理的工作方法也随之更新，应当赶上趋势。</p>
-
-<h1 id="section-1">怎么做？</h1>
-
-<p>知乎上提到一个比较有名的产品经理教学老师–尹广磊，提出了web页面的设计过程。可以作为参考内容：</p>
-
-<p><img src="http://www.webppd.com/attachments/month_1103/1103081611a3ca5db1fd5646ae.jpg" alt="" /></p>
-
-<h1 id="section-2">用工具吗？</h1>
-
-<p>工具是可以提高工作效率的，最好的工具应该是在知识体系构建下的合理的方法论，配合高效的工具。</p>
-
-<p>AXURE还是Sketch，有人已经做了很好的分享。参考如下：</p>
-
+<h2 id="section">为什么</h2>
 <blockquote>
-  <p>著作权归作者所有。
-商业转载请联系作者获得授权，非商业转载请注明出处。
-作者：盗盗
-链接：http://www.zhihu.com/question/26712715/answer/34060864
-来源：知乎</p>
+  <p>小型技术公司的生存之道是如何在别人用1个月的时间开发一个应用的时候，在相同质量要求下，你用2个星期 — 开发效率。开发效率不仅仅是个体的行为，而需要团队整体的开发效率提升。作为码农，没有比怎么在最短时间内写出高质量代码更能提高整体效率的事情了。</p>
 </blockquote>
 
-<p>作为一个同时掌握产品+交互+开发的人，我后来在项目中即时调整了我的工作流程，看我的Dock，我是如此安排在Code之前我的开发节奏的：Axure &gt; Sketch &gt; (QC) &gt; … 对比之后，发现效率极大的提升，在设计成本一定的情况下，产品策划（Axure） 和 UI设计（Sketch）的时间成本可以保持在3:1的样子；而之前用Sketch的时候，我估计是5:1的样子，甚至更多….</p>
+<blockquote>
+  <p>我们现在用java语言和sprintMVC框架属于轻车熟路，我们能而其他团队也能甚至更快的开发企业web应用。单从这个角度来看，这不足以支撑我们活下去。</p>
+</blockquote>
 
-<p><img src="https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_b.jpg" data-rawwidth="824" data-rawheight="160" class="origin_image zh-lightbox-thumb" width="824" data-original="https://pic2.zhimg.com/ee8b51857e851cfee5e3d2bd5e03f5d1_r.jpg" /></p>
+<blockquote>
+  <p>因此，技术转型需要提到日程。我们已经从SVN磕磕绊绊走上GIT，还是那句话『人生苦短，我用XX』。至于XX是什么，下面讨论。</p>
+</blockquote>
 
-<p>我是这么理解我吃饭的家伙们的：</p>
+<h2 id="section-1">目标</h2>
 
-<ul>
-  <li>
-    <p>Axure：梳理完成全部产品信息架构和功能。所以Auxre之于我的重要性他不是画图软件、不是交互软件，而更多的是帮助我从无到有梳理整个产品大的脉络</p>
-  </li>
-  <li>
-    <p>Sketch：基于之前的线框图增强设计感，具象之前的产品；如果产品理顺了的话，设计UI在Sketch的帮助下产出简直是飞速的，这也是Sketch之于Photoshop之流在做UI设计时候的牛逼之处。但是如果你错误的将Sketch定义为规划产品的工具，那产能会十分的低下</p>
-  </li>
-  <li>
-    <p>QC：仅针对一些极为复杂和细腻的交互动画（千万别试图拿QC当产品的交互工具，搞死你…），配合使用即可，也是帮助自己梳理特效的交互逻辑，避免在真实开发环境中走太多弯路。学习成本略高的软件，我今年上半年花了大力气学习的东西，传送门：Quartz Composer 如何入门？（目前QC我已经摒弃了，推荐Principle这款交互特效软件，更高效》》如何评价principle这款交互软件？）</p>
-  </li>
-  <li>
-    <p>Coding…（业余选手，主要是前端）</p>
-  </li>
-</ul>
+<blockquote>
+  <p>相同的企业web应用，用java和springMVC框架一个月，用了XX可以2个星期。</p>
+</blockquote>
 
+<h2 id="section-2">选择过程</h2>
+
+<blockquote>
+  <p>现在前端技术火热，javascrpt为带代表的各种框架都火了。在这个风潮下，我学习了一下nodejs，但发现nodejs在web异步处理上特别牛逼，但这个优势在企业web应用上应该不会有太大的作为。</p>
+</blockquote>
+
+<blockquote>
+  <p>把研究领域聚焦在web应用开发上，发现解决这个问题最快的可能是ROR（ruby on rails）— ruby是开发语言，rails是基于ruby的开发框架。早在2007年，我在项目里面让一个兄弟试用过rails框架，CRUD（增删改查）分分钟搞定。八年后再来研究，它的所谓『劣势』有：</p>
+</blockquote>
+
+<ol>
+  <li>ruby属于元编程，有极强的灵活性，负面效应是团队难以统一思路。</li>
+  <li>ruby哲学强调，解决一个问题有很多种途径。会产生众多选择性问题，在没有ruby牛人之前，团队可能有1000个解决问题的办法，从而拖累项目进度。</li>
+</ol>
+
+<blockquote>
+  <p>再强调一下，以上两点都不是劣势，而是不适合我们团队的情况。</p>
+</blockquote>
+
+<blockquote>
+  <p>在web应用轻量级快速开发选项里面，还有python语言及其种类繁多的web应用开发框架，例如flask,py.web,py2web等等。相对与ruby，它适宜我们团队使用的优势可能有：</p>
+</blockquote>
+
+<ol>
+  <li>python哲学，解决一个问题只有一个最佳实践。节省大量扯皮和选择的时间。</li>
+  <li>python社区非常活跃，其在各个领域的组件、库和框架已经远远远远远远超过ruby，甚至比java还多。</li>
+</ol>
+
+<h2 id="section-3">结论</h2>
+
+<blockquote>
+  <p>结合以上粗浅的研究，我个人觉得让python及其web应用开发框架作为团队整体技术体系『丰富』的第一步是一个理性的选择。</p>
+</blockquote>
+
+<blockquote>
+  <p>life is short, you need python – 这是原话，来自Bruce Eckel（《thinking in java》 和 《thinkin in c++》的作者）</p>
+</blockquote>
 
 				</span>
-				<div class="journal-date">Published 12 December 2015</div>
+				<div class="journal-date">Published 18 December 2015</div>
 				<div class="journal-tags">
 				
 				
@@ -220,9 +225,9 @@
 			<div class="tag-r"></div>
 		</a>
 	 
-		<a class="tag-cont" href="/tags.html#产品设计-ref">
+		<a class="tag-cont" href="/tags.html#learn-ref">
 			<div class="tag-l"></div>
-			<div class="tag-c">产品设计</div>
+			<div class="tag-c">learn</div>
 			<div class="tag-r"></div>
 		</a>
 	
@@ -241,7 +246,7 @@
 
   <!-- 多说评论框 start -->
 <div id="comments">
-    <div class="ds-thread" data-thread-key="/think/2015/12/12/学习_pd"  data-title="学习做产品（一） - 野猪一九九五"></div>
+    <div class="ds-thread" data-thread-key="/learn/2015/12/18/企业web应用开发框架选型"  data-title="企业web应用开发框架选型 - 野猪一九九五"></div>
 </div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
